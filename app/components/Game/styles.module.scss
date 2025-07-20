@@ -1,0 +1,39 @@
+.container {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .letterGrid {
+    display: flex;
+    flex-direction: column;
+    .word {
+      display: grid;
+      grid-auto-flow: column;
+      place-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+      .placeholder {
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        margin: 1rem;
+        font-size: 3rem;
+      }
+      input {
+        height: 4rem;
+        width: 4rem;
+        text-align: center;
+        border-bottom: 1px solid black;
+        margin: 1rem;
+        font-size: 2rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
